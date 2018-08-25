@@ -1,0 +1,23 @@
+<section>
+
+  <form [formGroup]="artistsForm" (ngSubmit)="submit()">
+
+    <section>
+      <input formControlName="name" type="text" />
+    </section>
+
+    <section>
+      <button type="submit">Send</button>
+    </section>
+
+  </form>
+
+</section>
+
+<hr/>
+
+<section>
+  <label for="">Chat</label>
+  <input type="text" [(ngModel)]="message" />
+  <button (click)="sendMessage()">Chat</button>
+</section>
